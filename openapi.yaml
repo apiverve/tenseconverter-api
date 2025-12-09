@@ -1,0 +1,82 @@
+openapi: 3.0.4
+info:
+  title: Tense Converter
+  description: Tense Converter is a simple tool for converting text to past or future tense. It returns the text converted to the specified tense.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/tenseconverter:
+    post:
+      summary: Convert Tense
+      description: Tense Converter is a simple tool for converting text to past or future tense. It returns the text converted to the specified tense.
+      operationId: tenseconverter
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  tense: past
+                  result: I was walking down the street, and I could see a dog
+                  changed: true
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                text:
+                  type: string
+                  description: The text to convert to past or future tense
+                  example: I am walking down the street, and I can see a dog
+                tense:
+                  type: string
+                  description: The tense to convert the text to (past or future)
+                  default: past
+                  example: past
+              required:
+              - text
+              - tense
+              example:
+                text: I am walking down the street, and I can see a dog
+                tense: past
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
