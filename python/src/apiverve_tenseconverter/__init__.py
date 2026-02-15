@@ -1,1 +1,3 @@
-from .apiClient import TenseconverterAPIClient
+from .apiClient import TenseconverterAPIClient, TenseconverterAPIClientError
+
+__all__ = ['TenseconverterAPIClient', 'TenseconverterAPIClientError']
