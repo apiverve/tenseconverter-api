@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/tenseconverter",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Tense Converter is a simple tool for converting text to past or future tense. It returns the text converted to the specified tense.",
   "main": "index.js",
   "types": "index.d.ts",
