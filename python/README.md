@@ -44,7 +44,10 @@ from apiverve_tenseconverter.apiClient import TenseconverterAPIClient
 # Initialize the client with your APIVerve API key
 api = TenseconverterAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 
 try:
     # Make the API call
@@ -82,7 +85,10 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 ```
 
 ###### Simple Request
@@ -122,7 +128,10 @@ from apiverve_tenseconverter.apiClient import TenseconverterAPIClient, Tenseconv
 
 api = TenseconverterAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 
 try:
     result = api.execute(query)
@@ -143,7 +152,10 @@ from apiverve_tenseconverter.apiClient import TenseconverterAPIClient, Tenseconv
 
 api = TenseconverterAPIClient("[YOUR_API_KEY]")
 
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 
 try:
     result = api.execute(query)
@@ -177,7 +189,10 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_tenseconverter.apiClient import TenseconverterAPIClient, TenseconverterAPIClientError
 
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 
 # Using context manager ensures proper cleanup
 with TenseconverterAPIClient("[YOUR_API_KEY]") as api:
@@ -203,7 +218,10 @@ from apiverve_tenseconverter.apiClient import TenseconverterAPIClient
 # Enable debug mode
 api = TenseconverterAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -218,8 +236,12 @@ from apiverve_tenseconverter.apiClient import TenseconverterAPIClient
 
 api = TenseconverterAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "text": "I am walking down the street, and I can see a dog",
+    "tense": "past"
+}
+
 try:
-    query = { "text": "I am walking down the street, and I can see a dog", "tense": "past" }
     result = api.execute(query)
     print(result)
 finally:
