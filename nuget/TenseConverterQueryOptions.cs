@@ -17,7 +17,7 @@ namespace APIVerve.API.TenseConverter
         public string Text { get; set; }
 
         /// <summary>
-        /// The tense to convert the text to (past or future)
+        /// The tense to convert the text to
         /// </summary>
         [JsonProperty("tense")]
         public string Tense { get; set; }
