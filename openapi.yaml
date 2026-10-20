@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Tense Converter
   description: >-
-    Tense Converter is a simple tool for converting text to past or future
-    tense. It returns the text converted to the specified tense.
+    Tense Converter rewrites text into past or future tense. Submit any passage
+    with your chosen target tense to receive the transformed wording and a flag
+    indicating whether the text changed.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/tenseconverter:
     post:
-      summary: Convert Tense
+      summary: Tense Converter
       description: Convert text to past or future tense
       operationId: tenseconverter
       parameters: []
@@ -67,7 +68,6 @@ paths:
                   description: The tense to convert the text to
               required:
                 - text
-                - tense
 components:
   securitySchemes:
     api_key:
