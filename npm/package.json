@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/tenseconverter",
-  "version": "1.2.0",
-  "description": "Tense Converter is a simple tool for converting text to past or future tense. It returns the text converted to the specified tense.",
+  "version": "1.2.2",
+  "description": "Tense Converter rewrites text into past or future tense. Submit any passage with your chosen target tense to receive the transformed wording and a flag indicating whether the text changed.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "tense converter", "tense converter api", "tense converter tool", "tense converter software", "tense converter service"
+    "tense converter api", "convert text to past tense", "change tense to future", "convert present to past tense", "grammatical tense changer"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/tenseconverter-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/tenseconverter?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/tenseconverter?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
