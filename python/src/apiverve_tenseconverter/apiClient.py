@@ -1,6 +1,6 @@
 import re
-from typing import Dict, Optional, Any
-from dataclasses import dataclass, List
+from typing import Dict, Optional, Any, List
+from dataclasses import dataclass
 import requests
 
 
@@ -25,7 +25,7 @@ class TenseconverterAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
         "text": {"type": "string", "required": True},
-        "tense": {"type": "string", "required": True, "default": "past"}
+        "tense": {"type": "string", "required": False, "default": "past"}
     }
 
     # Format validation patterns
