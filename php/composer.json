@@ -1,7 +1,7 @@
 {
     "name": "apiverve/tenseconverter",
     "description": "Tense Converter rewrites text into past or future tense. Submit any passage with your chosen target tense to receive the transformed wording and a flag indicating whether the text changed.",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "type": "library",
     "license": "MIT",
     "authors": [
